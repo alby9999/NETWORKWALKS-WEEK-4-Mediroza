@@ -333,8 +333,38 @@ Some possible risks include:
 - Improperly configured server permissions.
 
 These risks should be assessed only in an authorised training environment using simulated data.
+Use this modified version in your GitHub README:
 
-## 3.16 M3 Observations
+### 3.16 Directory Listing Assessment
+
+As part of the assessment, the `/old/` path was checked to see how the server responded when the directory was opened directly.
+
+The screenshots below show the pages observed during this check. This helped understand whether the server displayed directory contents or restricted access to the requested path.
+
+**Screenshot 2: `/old/` Directory Check**
+
+<img width="1897" height="297" alt="image" src="https://github.com/user-attachments/assets/9ac51d0a-f47a-4a0c-a5db-dc397c79664b" />
+
+**Screenshot 3: Directory Listing Observation**
+
+<img width="1897" height="622" alt="image" src="https://github.com/user-attachments/assets/2b5e2417-752b-4df4-abe5-5c5f296c8a05" />
+
+### **3.17 Database Backup Exposure**
+
+Database backup files were included in the security assessment to check whether sensitive backup resources were publicly accessible.
+
+Such files may contain important information about an organization's database and should never be exposed without proper access restrictions.
+
+The check was limited to security assessment and documentation. No confidential database information was accessed or shared.
+
+**Where to put it:** Place this section under **M3 – Critical Data Exposure**, immediately after the **Directory Listing Exposure** section and before your **Conclusion / Learning Outcomes**.
+
+Only say a backup was publicly accessible if you actually verified it.
+
+<img width="1882" height="552" alt="image" src="https://github.com/user-attachments/assets/524c87b6-6600-4a47-977c-e80af4bd8b29" />
+<img width="1882" height="337" alt="image" src="https://github.com/user-attachments/assets/37f104f1-8c8b-40d1-854a-913480f0f4f4" />
+
+## 3.18 M3 Observations
 
 This module helped me understand why organisations need to properly secure internal directories, backup files and other sensitive resources.
 
